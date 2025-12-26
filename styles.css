@@ -945,3 +945,516 @@ header h1 {
     pointer-events: none;
     z-index: 1000;
 }
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET AND MOBILE
+   ============================================ */
+
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .raffle-section {
+        order: 1;
+    }
+
+    .attendees-section {
+        order: 2;
+    }
+
+    .winners-section {
+        order: 3;
+    }
+
+    .prize-section {
+        order: 4;
+    }
+
+    .winner-name {
+        font-size: 2rem;
+    }
+
+    .family-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile View (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Stats Grid - Stack on mobile */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-value {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    /* Controls */
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* Action Buttons */
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+    /* Prize Buttons */
+    .prize-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .prize-buttons .btn {
+        width: 100%;
+    }
+
+    /* Family Filters */
+    .family-filters {
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        flex: 0 0 auto;
+        min-width: fit-content;
+    }
+
+    /* Color Filters */
+    .color-filters {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .color-filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    /* View Toggle */
+    .view-toggle {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .toggle-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Search Box */
+    .search-box {
+        margin-bottom: 15px;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    /* Winner Display */
+    .winner-display {
+        padding: 20px;
+        min-height: 250px;
+    }
+
+    .winner-card {
+        padding: 20px;
+    }
+
+    .winner-trophy {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .winner-name {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .winner-family,
+    .winner-color {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .winner-placeholder {
+        font-size: 3rem;
+    }
+
+    .winner-placeholder p {
+        font-size: 1rem;
+    }
+
+    /* Attendees List */
+    .attendees-list {
+        max-height: 400px;
+    }
+
+    .attendee-card {
+        padding: 12px;
+    }
+
+    .attendee-name {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .attendee-tags {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .attendee-family,
+    .attendee-color {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    /* Winners List */
+    .winners-list {
+        max-height: 400px;
+    }
+
+    .winner-item {
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .winner-details {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .winner-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .winner-info {
+        width: 100%;
+    }
+
+    .winner-item-name {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .winner-item-tags {
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .winner-item-family,
+    .winner-item-color {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    .winner-prize-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Prize Lists */
+    .prizes-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .prize-category h3 {
+        font-size: 1.1rem;
+    }
+
+    .prize-count {
+        font-size: 0.85rem;
+    }
+
+    .prize-list {
+        max-height: 300px;
+    }
+
+    .prize-item {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Animation Toggle */
+    .animation-toggle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .animation-toggle label {
+        font-size: 0.9rem;
+    }
+
+    /* Section Titles */
+    .section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    /* Export Button */
+    .export-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Empty Messages */
+    .empty-message {
+        font-size: 0.9rem;
+        padding: 30px 15px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .color-filter-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .winner-trophy {
+        font-size: 2.5rem;
+    }
+
+    .winner-name {
+        font-size: 1.3rem;
+    }
+
+    .winner-family,
+    .winner-color {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .attendee-name {
+        font-size: 0.9rem;
+    }
+
+    .attendee-family,
+    .attendee-color {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .winner-item-name {
+        font-size: 0.9rem;
+    }
+
+    .winner-item-family,
+    .winner-item-color {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .section h2 {
+        font-size: 1.1rem;
+    }
+
+    .prize-item {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+/* Landscape Mobile (max-height: 500px and orientation: landscape) */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 10px;
+    }
+
+    .winner-display {
+        min-height: 200px;
+        padding: 15px;
+    }
+
+    .winner-trophy {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .winner-name {
+        font-size: 1.2rem;
+    }
+
+    .attendees-list,
+    .winners-list,
+    .prize-list {
+        max-height: 250px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .controls,
+    .action-buttons,
+    .btn,
+    .search-box,
+    .family-filters,
+    .color-filters,
+    .view-toggle,
+    .animation-toggle {
+        display: none !important;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    header h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    .winner-display,
+    .winner-card {
+        border: 2px solid #000;
+    }
+}
