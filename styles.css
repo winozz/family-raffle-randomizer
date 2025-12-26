@@ -280,6 +280,8 @@ header h1 {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 968px) {
@@ -292,6 +294,8 @@ header h1 {
     background: var(--light);
     padding: 30px;
     border-radius: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 .winner-display {
@@ -501,6 +505,8 @@ header h1 {
     background: var(--light);
     padding: 30px;
     border-radius: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 .winners-history h3 {
@@ -583,10 +589,18 @@ header h1 {
     background: var(--light);
     padding: 30px;
     border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
 }
 
 .attendees-section .section-header {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .attendees-section h3 {
@@ -799,7 +813,10 @@ header h1 {
     background: var(--light);
     padding: 30px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .prizes-section h3 {
