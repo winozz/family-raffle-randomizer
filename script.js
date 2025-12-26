@@ -16,6 +16,7 @@ const staticAttendeesData = [
     { family: 'ANAK AT APO NI DARDING', name: 'Ronald Fadrilan' },
     { family: 'ANAK AT APO NI DARDING', name: 'Thea Fadrilan' },
     { family: 'ANAK AT APO NI DARDING', name: 'Clyde Fadrilan' },
+    { family: 'ANAK AT APO NI DARDING', name: 'Alexis Fadrilan' },
     { family: 'ANAK AT APO NI PRUDING', name: 'Dorie Fadrilan' },
     { family: 'ANAK AT APO NI PRUDING', name: 'Nelgrim Fadrilan' },
     { family: 'ANAK AT APO NI PRUDING', name: 'Eli Parabuac' },
@@ -246,14 +247,32 @@ function loadStaticData() {
     // Shuffle attendees for random color assignment
     const shuffled = [...staticAttendeesData].sort(() => Math.random() - 0.5);
     
-    allAttendees = shuffled.map((attendee, index) => ({
-        id: index + 1,
-        family: attendee.family,
-        name: attendee.name,
-        familyClass: familyColors[attendee.family] || 'family-default',
-        colorGroup: COLOR_GROUPS[index % 4], // Assign color group in rotation
-        colorClass: COLOR_CLASSES[COLOR_GROUPS[index % 4]]
-    }));
+    allAttendees = shuffled.map((attendee, index) => {
+        let colorGroup;
+        let colorClass;
+        
+        // Special color assignments
+        if (attendee.name === 'Alexis Fadrilan' && attendee.family === 'ANAK AT APO NI DARDING') {
+            colorGroup = 'Yellow';
+            colorClass = COLOR_CLASSES['Yellow'];
+        } else if (attendee.name === 'Aliana Faye Roxas') {
+            colorGroup = 'Blue';
+            colorClass = COLOR_CLASSES['Blue'];
+        } else {
+            // Random assignment for others
+            colorGroup = COLOR_GROUPS[index % 4];
+            colorClass = COLOR_CLASSES[COLOR_GROUPS[index % 4]];
+        }
+        
+        return {
+            id: index + 1,
+            family: attendee.family,
+            name: attendee.name,
+            familyClass: familyColors[attendee.family] || 'family-default',
+            colorGroup: colorGroup,
+            colorClass: colorClass
+        };
+    });
     
     // Load from local storage if available
     loadFromLocalStorage();
