@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Reunion Raffle Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Family Reunion Raffle Draw 🎉</h1>
+            <p class="subtitle">Random Winner Selection System</p>
+        </header>
+
+        <div class="controls">
+            <button id="loadData" class="btn btn-primary">📂 Load Attendees Data</button>
+            <input type="file" id="fileInput" accept=".csv" style="display: none;">
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="totalAttendees">0</span>
+                <span class="stat-label">Total Attendees</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="totalFamilies">0</span>
+                <span class="stat-label">Family Groups</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="remainingCount">0</span>
+                <span class="stat-label">Remaining</span>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h3>Filter by Family Group</h3>
+            <div id="familyFilters" class="family-filters">
+                <button class="filter-btn active" data-family="all">All Families</button>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h3>Filter by Color Group</h3>
+            <div id="colorFilters" class="color-filters">
+                <button class="color-filter-btn active" data-color="all">All Colors</button>
+                <button class="color-filter-btn color-blue" data-color="Blue">🔵 Blue</button>
+                <button class="color-filter-btn color-green" data-color="Green">🟢 Green</button>
+                <button class="color-filter-btn color-yellow" data-color="Yellow">🟡 Yellow</button>
+                <button class="color-filter-btn color-orange" data-color="Orange">🟠 Orange</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="randomizer-section">
+                <div class="winner-display" id="winnerDisplay">
+                    <div class="winner-placeholder">
+                        🎟️
+                        <p>Click "Draw Winner" to start!</p>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="drawWinner" class="btn btn-draw" disabled>
+                        🎲 Draw Winner
+                    </button>
+                    <button id="resetDraw" class="btn btn-secondary">
+                        🔄 Reset All Winners
+                    </button>
+                    <button id="memeButton" class="btn btn-meme">
+                        😂 Meme Draw
+                    </button>
+                </div>
+
+                <div class="prize-selector">
+                    <h4>🎁 Select Prize Type:</h4>
+                    <div class="prize-buttons">
+                        <button id="assignCommonPrize" class="btn btn-prize btn-common" disabled>
+                            🎁 Common Prize
+                        </button>
+                        <button id="assignLuxPrize" class="btn btn-prize btn-lux" disabled>
+                            💎 Luxury Prize
+                        </button>
+                    </div>
+                    <p class="prize-info">Prizes remaining: <span id="commonCount">${availableCommonPrizes.length}</span> Common | <span id="luxCount">${availableLuxPrizes.length}</span> Luxury</p>
+                </div>
+
+                <div class="animation-toggle">
+                    <label>
+                        <input type="checkbox" id="animationToggle" checked>
+                        Enable Animation
+                    </label>
+                </div>
+            </div>
+
+            <div class="winners-history">
+                <h3>🏆 Winners History</h3>
+                <div id="winnersList" class="winners-list">
+                    <p class="empty-message">No winners yet</p>
+                </div>
+                <button id="exportWinners" class="btn btn-small" style="display: none;">
+                    📥 Export Winners
+                </button>
+            </div>
+        </div>
+
+        <div class="prizes-section">
+            <h3>🎁 Prize Inventory</h3>
+            <div class="prizes-container">
+                <div class="prize-category">
+                    <h4>💎 Luxury Prizes (<span id="luxPrizeCount">10</span>)</h4>
+                    <div id="luxPrizesList" class="prizes-list"></div>
+                </div>
+                <div class="prize-category">
+                    <h4>🎁 Common Prizes (<span id="commonPrizeCount">25</span>)</h4>
+                    <div id="commonPrizesList" class="prizes-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="attendees-section">
+            <div class="section-header">
+                <h3>📋 All Attendees (<span id="attendeeCount">0</span>)</h3>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="remaining">
+                        ✅ Remaining (<span id="remainingViewCount">0</span>)
+                    </button>
+                    <button class="toggle-btn" data-view="selected">
+                        🏆 Already Won (<span id="selectedViewCount">0</span>)
+                    </button>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search attendees...">
+            </div>
+            <div id="attendeesList" class="attendees-list">
+                <p class="empty-message">Load data to see attendees</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made with ❤️ for Family Reunion 2025</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
