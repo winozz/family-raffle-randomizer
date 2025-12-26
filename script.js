@@ -191,7 +191,6 @@ const loadDataBtn = document.getElementById('loadData');
 const fileInput = document.getElementById('fileInput');
 const drawWinnerBtn = document.getElementById('drawWinner');
 const resetDrawBtn = document.getElementById('resetDraw');
-const memeButton = document.getElementById('memeButton');
 const assignCommonPrizeBtn = document.getElementById('assignCommonPrize');
 const assignLuxPrizeBtn = document.getElementById('assignLuxPrize');
 const winnerDisplay = document.getElementById('winnerDisplay');
@@ -215,7 +214,6 @@ function attachEventListeners() {
     fileInput.addEventListener('change', handleFileUpload);
     drawWinnerBtn.addEventListener('click', drawWinner);
     resetDrawBtn.addEventListener('click', resetDraw);
-    memeButton.addEventListener('click', drawMemeWinner);
     assignCommonPrizeBtn.addEventListener('click', () => assignPrize('common'));
     assignLuxPrizeBtn.addEventListener('click', () => assignPrize('lux'));
     searchInput.addEventListener('input', filterAttendees);
@@ -527,42 +525,6 @@ function renderAttendees() {
     }
 }
 
-// Draw meme winner
-function drawMemeWinner() {
-    memeButton.disabled = true;
-    
-    // Create meme winner display with special animation
-    const memeWinner = {
-        name: 'Godwin Lorenz',
-        family: 'SPECIAL WINNER',
-        familyClass: 'family-jun',
-        prize: '💝 Nadine Fiestada 💝'
-    };
-    
-    // Animate
-    let iterations = 0;
-    const maxIterations = 15;
-    
-    const interval = setInterval(() => {
-        const randomNames = ['???', '🎭', '🎪', '🎨', '🎬', '🎯'];
-        const randomName = randomNames[Math.floor(Math.random() * randomNames.length)];
-        
-        winnerDisplay.innerHTML = `
-            <div class="winner-card animating">
-                <div class="winner-trophy">😂</div>
-                <div class="winner-name">${randomName}</div>
-            </div>
-        `;
-        
-        iterations++;
-        
-        if (iterations >= maxIterations) {
-            clearInterval(interval);
-            displayMemeWinner(memeWinner);
-        }
-    }, 100);
-}
-
 // Assign prize to winner
 function assignPrize(prizeType) {
     if (!lastWinner) {
@@ -643,55 +605,6 @@ function updatePrizeCounts() {
     document.getElementById('commonCount').textContent = availableCommonPrizes.length;
     document.getElementById('luxPrizeCount').textContent = availableLuxPrizes.length;
     document.getElementById('commonPrizeCount').textContent = availableCommonPrizes.length;
-}
-
-// Display meme winner
-function displayMemeWinner(memeWinner) {
-    winnerDisplay.innerHTML = `
-        <div class="winner-card">
-            <div class="winner-trophy">👑</div>
-            <div class="winner-name">${memeWinner.name}</div>
-            <span class="winner-family ${memeWinner.familyClass}">
-                GRAND PRIZE WINNER
-            </span>
-            <div class="winner-prize">
-                🎁 Prize: ${memeWinner.prize} 🎁
-            </div>
-        </div>
-    `;
-    
-    // Extra confetti for meme winner
-    createMemeConfetti();
-    
-    // Show special notification
-    showNotification('😂 SPECIAL MEME DRAW! Congratulations Godwin Lorenz! 🎉', 'success');
-    
-    // Re-enable button after delay
-    setTimeout(() => {
-        memeButton.disabled = false;
-    }, 2000);
-}
-
-// Create special meme confetti
-function createMemeConfetti() {
-    const emojis = ['💝', '❤️', '💕', '💖', '💗', '💓', '💞', '💘'];
-    
-    for (let i = 0; i < 100; i++) {
-        setTimeout(() => {
-            const confetti = document.createElement('div');
-            confetti.style.position = 'fixed';
-            confetti.style.left = Math.random() * 100 + '%';
-            confetti.style.top = '-20px';
-            confetti.style.fontSize = '24px';
-            confetti.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-            confetti.style.animation = `confetti-fall ${Math.random() * 2 + 3}s linear`;
-            confetti.style.pointerEvents = 'none';
-            confetti.style.zIndex = '1000';
-            document.body.appendChild(confetti);
-            
-            setTimeout(() => confetti.remove(), 5000);
-        }, i * 20);
-    }
 }
 
 // Filter attendees
