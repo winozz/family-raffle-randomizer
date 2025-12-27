@@ -31,6 +31,31 @@
                 <span class="stat-number" id="remainingCount">0</span>
                 <span class="stat-label">Remaining</span>
             </div>
+            <div class="stat-card">
+                <span class="stat-number" id="presentCount">0</span>
+                <span class="stat-label">Present</span>
+            </div>
+        </div>
+
+        <!-- Attendance Tracking Section -->
+        <div class="attendance-section">
+            <div class="attendance-header">
+                <h3>📋 Attendance Tracker</h3>
+                <div class="attendance-controls">
+                    <button id="toggleAttendance" class="btn btn-small btn-secondary">
+                        👁️ View Attendance
+                    </button>
+                    <button id="exportAttendance" class="btn btn-small btn-primary">
+                        📥 Export Attendance
+                    </button>
+                </div>
+            </div>
+            <div id="attendanceList" class="attendance-list" style="display: none;">
+                <div class="attendance-search">
+                    <input type="text" id="attendanceSearch" placeholder="🔍 Search attendees...">
+                </div>
+                <div id="attendanceItems" class="attendance-items"></div>
+            </div>
         </div>
 
         <div class="filter-section">
@@ -46,8 +71,8 @@
                 <button class="color-filter-btn active" data-color="all">All Colors</button>
                 <button class="color-filter-btn color-blue" data-color="Blue">🔵 Blue</button>
                 <button class="color-filter-btn color-green" data-color="Green">🟢 Green</button>
-                <button class="color-filter-btn color-yellow" data-color="Yellow">🟡 Yellow</button>
-                <button class="color-filter-btn color-orange" data-color="Orange">🟠 Orange</button>
+                <button class="color-filter-btn color-black" data-color="Black">⚫ Black</button>
+                <button class="color-filter-btn color-red" data-color="Red">� Red</button>
             </div>
         </div>
 
@@ -77,6 +102,9 @@
                         </button>
                         <button id="assignLuxPrize" class="btn btn-prize btn-lux" disabled>
                             💎 Luxury Prize
+                        </button>
+                        <button id="manualPrize" class="btn btn-prize btn-manual" disabled>
+                            ✏️ Manual Prize
                         </button>
                     </div>
                     <p class="prize-info">Prizes remaining: <span id="commonCount">${availableCommonPrizes.length}</span> Common | <span id="luxCount">${availableLuxPrizes.length}</span> Luxury</p>

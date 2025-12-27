@@ -2,106 +2,111 @@
 const staticAttendeesData = [
     { family: 'ANAK AT APO NI YOLLY', name: 'Shirly', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI YOLLY', name: 'Rhapy', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI YOLLY', name: 'Ashley', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI YOLLY', name: 'Basty', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI YOLLY', name: 'Ashley', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI YOLLY', name: 'Basty', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI YOLLY', name: 'Jane', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI YOLLY', name: 'Marc', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI YOLLY', name: 'Lucy', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI YOLLY', name: 'Zoe', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI YOLLY', name: 'Lucy', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI YOLLY', name: 'Zoe', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI CORIT', name: 'Judith', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI CORIT', name: 'Timothy', colorTeam: 'Green' },
     { family: 'ANAK AT APO NI DARDING', name: 'Beberly Alcantara', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI DARDING', name: 'Martin Alcantara', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI DARDING', name: 'Shaine Fadrilan', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI DARDING', name: 'Shaine Fadrilan', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI DARDING', name: 'Ronald Fadrilan', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI DARDING', name: 'Thea Fadrilan', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI DARDING', name: 'Clyde Fadrilan', colorTeam: 'Orange' },
-    { family: 'ANAK AT APO NI DARDING', name: 'Alexis Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI PRUDING', name: 'Dorie Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI PRUDING', name: 'Nelgrim Fadrilan', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI DARDING', name: 'Clyde Fadrilan', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI DARDING', name: 'Alexis Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI PRUDING', name: 'Dorie Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI PRUDING', name: 'Nelgrim Fadrilan', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI PRUDING', name: 'Eli Parabuac', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI JUN', name: 'Franklin Eleccion', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI JUN', name: 'Charito Eleccion', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI JUN', name: 'Francis John Fadrilan', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI JUN', name: 'Charito Eleccion', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI JUN', name: 'Francis John Fadrilan', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI JUN', name: 'Jonamine Fadrilan', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI JUN', name: 'Juliet Faith Fadrilan', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI JUN', name: 'Finella Jule Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI JUN', name: 'Francess July Fadrilan', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI JUN', name: 'Finella Jule Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI JUN', name: 'Francess July Fadrilan', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI JUN', name: 'Jonathan David', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI JUN', name: 'Christine Anne David', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI JUN', name: 'Princess Joanne David', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI JUN', name: 'Prince Christhan David', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI JUN', name: 'Princess Joanne David', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI JUN', name: 'Prince Christhan David', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI JUN', name: 'Prex Nathaniel David', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI JUN', name: 'Felix Fadrilan III', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI JUN', name: 'Gina Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI JUN', name: 'Arabella Fadrilan', colorTeam: 'Orange' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Cherry Faz', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Samantha Faz', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI JUN', name: 'Gina Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI JUN', name: 'Arabella Fadrilan', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Ethel', colorTeam: 'Blue' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Cherry Faz', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Samantha Faz', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI CORIT', name: 'Gian Morales', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI CORIT', name: 'Chester Morale', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Elora Mangao', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Ellie Mangao', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Elora Mangao', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Ellie Mangao', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI CORIT', name: 'Magic Mangao', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI CORIT', name: 'Elaine Mangao', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Eric John Mangao', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Erika Mangao', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Eric John Mangao', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Erika Mangao', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI CORIT', name: 'Marlon Fabalina', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI CORIT', name: 'Reshel Fabalina', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Annika Fabalina', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI CORIT', name: 'Aishel Fabalina', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Annika Fabalina', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Aishel Fabalina', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Miray', colorTeam: 'Green' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Nene', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI CORIT', name: 'Quesx', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LIZA', name: 'Danny Sumayao', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LIZA', name: 'Liza Sumayao', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LIZA', name: 'Ian Tapuro', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI LIZA', name: 'May Tapuro', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LIZA', name: 'Ian Tapuro', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LIZA', name: 'May Tapuro', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LIZA', name: 'Miguel Tapuro', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LIZA', name: 'Rafael Tapuro', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LIZA', name: 'Cholo Sabido', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI LIZA', name: 'Pangga Sabido', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LIZA', name: 'Cholo Sabido', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LIZA', name: 'Pangga Sabido', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LIZA', name: 'Coco Sabido', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LIZA', name: 'Tenten Sabido', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Chris Fiecas', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Leony Fiecas', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Chris Fiecas', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Leony Fiecas', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LEONY', name: 'Yuan Fiecas', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LEONY', name: 'Elka Santos', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Ryan Santos', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Lia Santos', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Ryan Santos', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Lia Santos', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LEONY', name: 'Gab Santos', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LEONY', name: 'Jericho Fiecas', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Jean Fiecas', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Jj Fiecas', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Jean Fiecas', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Jj Fiecas', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI LEONY', name: 'Debie Grefiel', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI LEONY', name: 'Glen Gualisa', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI LEONY', name: 'Demie Oliveron', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI MERLY', name: 'Adrian Fabula', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Demie Oliveron', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI LEONY', name: 'Chariz', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI MERLY', name: 'Adrian Fabula', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI MERLY', name: 'Cherry Fabula', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI MERLY', name: 'Andrea Chloe Fabula', colorTeam: 'Green' },
     { family: 'ANAK AT APO NI JUN', name: 'Bong Fadrilan', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI JUN', name: 'Gina Fadrilan', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI JUN', name: 'Bella Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Dwanie Fadrilan', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI JUN', name: 'Bella Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Dwanie Fadrilan', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Lanie Fadrilan', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Nathaniel Fadrilan', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Sharon Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Rey Gaba', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Sharon Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Rey Gaba', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Kevin Gaba', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Alex Padillo', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Bella Gaba', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Ace Gaba', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Bella Gaba', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Ace Gaba', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI TIBOY', name: 'JR Gaba', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Rose Gaba', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Joy Fadrilan', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Lan Joseph Fajardo', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Joy Fadrilan', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Lan Joseph Fajardo', colorTeam: 'Red' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Noreen De Jesus', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Babelin Fadrilan Roxas', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Alex Roxas', colorTeam: 'Orange' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Alexis Mae Roxas', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Aliana Faye Roxas', colorTeam: 'Blue' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Florian Fadrilan Fabito', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Philip Jeid Fabito', colorTeam: 'Orange' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Ann Toribio', colorTeam: 'Blue' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Babelin Fadrilan Roxas', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Alex Roxas', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Alexis Mae Roxas', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Aliana Faye Roxas', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Florian Fadrilan Fabito', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Philip Jeid Fabito', colorTeam: 'Red' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Ann Toribio', colorTeam: 'Green' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Jonathan Fiestada', colorTeam: 'Green' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Zyra Fiestada', colorTeam: 'Yellow' },
-    { family: 'ANAK AT APO NI TIBOY', name: 'Godwin Lorenz', colorTeam: 'Orange' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Zyra Fiestada', colorTeam: 'Black' },
+    { family: 'ANAK AT APO NI TIBOY', name: 'Godwin Lorenz', colorTeam: 'Black' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Lorelie Fadrilan Musa', colorTeam: 'Blue' },
     { family: 'ANAK AT APO NI TIBOY', name: 'Prince Danrie Musa', colorTeam: 'Green' }
 ];
@@ -156,12 +161,12 @@ let availableLuxPrizes = [...PRIZES.lux];
 let availableCommonPrizes = [...PRIZES.common];
 
 // Color groups for additional tagging
-const COLOR_GROUPS = ['Blue', 'Green', 'Yellow', 'Orange'];
+const COLOR_GROUPS = ['Blue', 'Green', 'Black', 'Red'];
 const COLOR_CLASSES = {
     'Blue': 'color-blue',
     'Green': 'color-green',
-    'Yellow': 'color-yellow',
-    'Orange': 'color-orange'
+    'Black': 'color-black',
+    'Red': 'color-red'
 };
 
 // State management
@@ -172,6 +177,8 @@ let currentFilter = 'all';
 let currentView = 'remaining'; // 'remaining' or 'selected'
 let currentColorFilter = 'all'; // 'all' or specific color
 let lastWinner = null; // Track the last drawn winner for prize assignment
+let attendanceRecords = {}; // Track attendance: { id: true/false }
+let attendanceVisible = false; // Track attendance section visibility
 
 // Family color mapping
 const familyColors = {
@@ -193,6 +200,7 @@ const drawWinnerBtn = document.getElementById('drawWinner');
 const resetDrawBtn = document.getElementById('resetDraw');
 const assignCommonPrizeBtn = document.getElementById('assignCommonPrize');
 const assignLuxPrizeBtn = document.getElementById('assignLuxPrize');
+const manualPrizeBtn = document.getElementById('manualPrize');
 const winnerDisplay = document.getElementById('winnerDisplay');
 const winnersList = document.getElementById('winnersList');
 const attendeesList = document.getElementById('attendeesList');
@@ -202,6 +210,13 @@ const animationToggle = document.getElementById('animationToggle');
 const exportWinnersBtn = document.getElementById('exportWinners');
 const luxPrizesList = document.getElementById('luxPrizesList');
 const commonPrizesList = document.getElementById('commonPrizesList');
+
+// Attendance DOM elements
+const toggleAttendanceBtn = document.getElementById('toggleAttendance');
+const exportAttendanceBtn = document.getElementById('exportAttendance');
+const attendanceList = document.getElementById('attendanceList');
+const attendanceSearch = document.getElementById('attendanceSearch');
+const attendanceItems = document.getElementById('attendanceItems');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -216,8 +231,14 @@ function attachEventListeners() {
     resetDrawBtn.addEventListener('click', resetDraw);
     assignCommonPrizeBtn.addEventListener('click', () => assignPrize('common'));
     assignLuxPrizeBtn.addEventListener('click', () => assignPrize('lux'));
+    manualPrizeBtn.addEventListener('click', assignManualPrize);
     searchInput.addEventListener('input', filterAttendees);
     exportWinnersBtn.addEventListener('click', exportWinners);
+    
+    // Attendance listeners
+    toggleAttendanceBtn.addEventListener('click', toggleAttendanceView);
+    exportAttendanceBtn.addEventListener('click', exportAttendance);
+    attendanceSearch.addEventListener('input', renderAttendance);
     
     // View toggle listeners
     document.querySelectorAll('.toggle-btn').forEach(btn => {
@@ -317,6 +338,7 @@ function parseCSVData(csvText) {
 
 // Initialize app after data is loaded
 function initializeApp() {
+    loadAttendanceFromLocalStorage();
     updateStats();
     renderFamilyFilters();
     renderAttendees();
@@ -546,6 +568,7 @@ function assignPrize(prizeType) {
     // Disable prize buttons
     assignCommonPrizeBtn.disabled = true;
     assignLuxPrizeBtn.disabled = true;
+    manualPrizeBtn.disabled = true;
     
     // Save and update
     saveToLocalStorage();
@@ -554,6 +577,125 @@ function assignPrize(prizeType) {
     renderPrizes();
     
     showNotification(`🎁 Prize assigned: ${prize}`, 'success');
+}
+
+// Assign manual prize to winner
+function assignManualPrize() {
+    if (!lastWinner) {
+        showNotification('Please draw a winner first!', 'warning');
+        return;
+    }
+    
+    // Create custom modal for manual prize input
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        animation: fadeIn 0.3s ease;
+    `;
+    
+    const modalContent = document.createElement('div');
+    modalContent.style.cssText = `
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: slideIn 0.3s ease;
+    `;
+    
+    modalContent.innerHTML = `
+        <h2 style="color: #8b5cf6; margin-bottom: 20px;">✏️ Enter Custom Prize</h2>
+        <p style="color: #6b7280; margin-bottom: 20px;">For winner: <strong>${lastWinner.name}</strong></p>
+        <input type="text" id="manualPrizeInput" 
+               style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; 
+                      border-radius: 10px; font-size: 16px; margin-bottom: 20px;"
+               placeholder="Enter prize name (e.g., Gift Certificate ₱500)">
+        <div style="display: flex; gap: 10px;">
+            <button id="cancelManualPrize" 
+                    style="flex: 1; padding: 12px 20px; background: #f3f4f6; 
+                           border: none; border-radius: 10px; cursor: pointer; 
+                           font-weight: 600; font-size: 16px;">
+                Cancel
+            </button>
+            <button id="confirmManualPrize" 
+                    style="flex: 1; padding: 12px 20px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); 
+                           color: white; border: none; border-radius: 10px; cursor: pointer; 
+                           font-weight: 600; font-size: 16px;">
+                Assign Prize
+            </button>
+        </div>
+    `;
+    
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+    
+    const prizeInput = document.getElementById('manualPrizeInput');
+    const confirmBtn = document.getElementById('confirmManualPrize');
+    const cancelBtn = document.getElementById('cancelManualPrize');
+    
+    // Focus on input
+    setTimeout(() => prizeInput.focus(), 100);
+    
+    // Handle confirm
+    const handleConfirm = () => {
+        const customPrize = prizeInput.value.trim();
+        
+        if (customPrize === '') {
+            prizeInput.style.borderColor = '#ef4444';
+            prizeInput.placeholder = '❌ Please enter a prize name!';
+            showNotification('❌ Prize name cannot be empty!', 'warning');
+            return;
+        }
+        
+        // Update winner with manual prize
+        const winnerIndex = winners.findIndex(w => w.id === lastWinner.id && !w.prize);
+        if (winnerIndex !== -1) {
+            winners[winnerIndex].prize = customPrize;
+            winners[winnerIndex].prizeType = 'manual';
+        }
+        
+        // Clear last winner
+        lastWinner = null;
+        
+        // Disable prize buttons
+        assignCommonPrizeBtn.disabled = true;
+        assignLuxPrizeBtn.disabled = true;
+        manualPrizeBtn.disabled = true;
+        
+        // Save and update
+        saveToLocalStorage();
+        renderWinners();
+        
+        document.body.removeChild(modal);
+        showNotification(`✏️ Manual prize assigned: ${customPrize}`, 'success');
+    };
+    
+    // Handle cancel
+    const handleCancel = () => {
+        document.body.removeChild(modal);
+        showNotification('Manual prize entry cancelled', 'info');
+    };
+    
+    // Event listeners
+    confirmBtn.addEventListener('click', handleConfirm);
+    cancelBtn.addEventListener('click', handleCancel);
+    prizeInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleConfirm();
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) handleCancel();
+    });
 }
 
 // Render prizes list
@@ -601,6 +743,13 @@ function drawWinner() {
         return;
     }
     
+    // Check if there are any eligible attendees (excluding TIBOY family)
+    const eligibleAttendees = remainingAttendees.filter(a => a.family !== 'ANAK AT APO NI TIBOY');
+    if (eligibleAttendees.length === 0) {
+        showNotification('No eligible attendees remaining! (TIBOY family excluded from raffle)', 'warning');
+        return;
+    }
+    
     const useAnimation = animationToggle.checked;
     
     if (useAnimation) {
@@ -614,11 +763,14 @@ function drawWinner() {
 function animateRandomSelection() {
     drawWinnerBtn.disabled = true;
     let iterations = 0;
-    const maxIterations = 20;
+    const maxIterations = 50; // 50 iterations × 100ms = 5 seconds
+    
+    // Filter out TIBOY family members from eligible winners
+    const eligibleAttendees = remainingAttendees.filter(a => a.family !== 'ANAK AT APO NI TIBOY');
     
     const interval = setInterval(() => {
-        const randomIndex = Math.floor(Math.random() * remainingAttendees.length);
-        const tempWinner = remainingAttendees[randomIndex];
+        const randomIndex = Math.floor(Math.random() * eligibleAttendees.length);
+        const tempWinner = eligibleAttendees[randomIndex];
         
         winnerDisplay.innerHTML = `
             <div class="winner-card animating">
@@ -641,8 +793,18 @@ function animateRandomSelection() {
 
 // Select final winner
 function selectWinner() {
-    const randomIndex = Math.floor(Math.random() * remainingAttendees.length);
-    const winner = remainingAttendees[randomIndex];
+    // Filter out TIBOY family members from eligible winners
+    const eligibleAttendees = remainingAttendees.filter(a => a.family !== 'ANAK AT APO NI TIBOY');
+    
+    // Check if there are any eligible attendees
+    if (eligibleAttendees.length === 0) {
+        showNotification('No eligible attendees remaining! (TIBOY family excluded from raffle)', 'warning');
+        drawWinnerBtn.disabled = false;
+        return;
+    }
+    
+    const randomIndex = Math.floor(Math.random() * eligibleAttendees.length);
+    const winner = eligibleAttendees[randomIndex];
     
     // Store as last winner (for prize assignment)
     lastWinner = winner;
@@ -667,6 +829,7 @@ function selectWinner() {
     // Enable prize buttons
     assignCommonPrizeBtn.disabled = availableCommonPrizes.length === 0;
     assignLuxPrizeBtn.disabled = availableLuxPrizes.length === 0;
+    manualPrizeBtn.disabled = false;
     
     // Show confetti
     createConfetti();
@@ -719,9 +882,18 @@ function renderWinners() {
     
     let html = '';
     winners.forEach((winner, index) => {
-        const prizeDisplay = winner.prize 
-            ? `<div class="winner-prize-tag ${winner.prizeType === 'lux' ? 'prize-lux' : 'prize-common'}">${winner.prize}</div>`
-            : '<div class="winner-prize-tag prize-pending">⏳ Prize pending...</div>';
+        let prizeDisplay;
+        if (winner.prize) {
+            let prizeClass = 'prize-common';
+            if (winner.prizeType === 'lux') {
+                prizeClass = 'prize-lux';
+            } else if (winner.prizeType === 'manual') {
+                prizeClass = 'prize-manual';
+            }
+            prizeDisplay = `<div class="winner-prize-tag ${prizeClass}">${winner.prize}</div>`;
+        } else {
+            prizeDisplay = '<div class="winner-prize-tag prize-pending">⏳ Prize pending...</div>';
+        }
         
         html += `
             <div class="winner-item">
@@ -837,6 +1009,7 @@ function resetDraw() {
             lastWinner = null;
             assignCommonPrizeBtn.disabled = true;
             assignLuxPrizeBtn.disabled = true;
+            manualPrizeBtn.disabled = true;
             
             // Update toggle buttons
             document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
@@ -943,3 +1116,137 @@ document.addEventListener('keydown', (e) => {
         resetDraw();
     }
 });
+
+// ============================================
+// ATTENDANCE TRACKING FUNCTIONS
+// ============================================
+
+// Toggle attendance view
+function toggleAttendanceView() {
+    attendanceVisible = !attendanceVisible;
+    
+    if (attendanceVisible) {
+        attendanceList.style.display = 'block';
+        toggleAttendanceBtn.textContent = '👁️ Hide Attendance';
+        renderAttendance();
+    } else {
+        attendanceList.style.display = 'none';
+        toggleAttendanceBtn.textContent = '👁️ View Attendance';
+    }
+}
+
+// Render attendance list
+function renderAttendance() {
+    const searchTerm = attendanceSearch.value.toLowerCase();
+    
+    let filtered = allAttendees.filter(attendee => 
+        attendee.name.toLowerCase().includes(searchTerm) ||
+        attendee.family.toLowerCase().includes(searchTerm)
+    );
+    
+    if (filtered.length === 0) {
+        attendanceItems.innerHTML = '<p class="empty-message">No attendees found</p>';
+        return;
+    }
+    
+    let html = '';
+    filtered.forEach(attendee => {
+        const isPresent = attendanceRecords[attendee.id] || false;
+        const statusClass = isPresent ? 'present' : 'absent';
+        
+        html += `
+            <div class="attendance-item ${statusClass}" data-id="${attendee.id}">
+                <div class="attendance-info">
+                    <div class="attendance-name">${attendee.name}</div>
+                    <div class="attendance-tags">
+                        <span class="attendance-family ${attendee.familyClass}">
+                            ${attendee.family.replace('ANAK AT APO NI ', '')}
+                        </span>
+                        <span class="attendance-color ${attendee.colorClass}">
+                            ${attendee.colorGroup}
+                        </span>
+                    </div>
+                </div>
+                <div class="attendance-checkbox">
+                    <input type="checkbox" 
+                           id="attendance-${attendee.id}" 
+                           ${isPresent ? 'checked' : ''}
+                           onchange="toggleAttendance(${attendee.id})">
+                    <label for="attendance-${attendee.id}">
+                        ${isPresent ? '✅' : '⬜'}
+                    </label>
+                </div>
+            </div>
+        `;
+    });
+    
+    attendanceItems.innerHTML = html;
+    updateAttendanceStats();
+}
+
+// Toggle individual attendance
+function toggleAttendance(attendeeId) {
+    attendanceRecords[attendeeId] = !attendanceRecords[attendeeId];
+    saveAttendanceToLocalStorage();
+    renderAttendance();
+    updateStats();
+}
+
+// Update attendance statistics
+function updateAttendanceStats() {
+    const presentCount = Object.values(attendanceRecords).filter(Boolean).length;
+    document.getElementById('presentCount').textContent = presentCount;
+}
+
+// Save attendance to local storage
+function saveAttendanceToLocalStorage() {
+    localStorage.setItem('raffleAttendance', JSON.stringify(attendanceRecords));
+}
+
+// Load attendance from local storage
+function loadAttendanceFromLocalStorage() {
+    const savedAttendance = localStorage.getItem('raffleAttendance');
+    
+    if (savedAttendance) {
+        try {
+            attendanceRecords = JSON.parse(savedAttendance);
+        } catch (error) {
+            console.error('Error loading attendance:', error);
+            attendanceRecords = {};
+        }
+    } else {
+        // Initialize all as absent
+        attendanceRecords = {};
+        allAttendees.forEach(attendee => {
+            attendanceRecords[attendee.id] = false;
+        });
+    }
+    
+    updateAttendanceStats();
+}
+
+// Export attendance to CSV
+function exportAttendance() {
+    if (allAttendees.length === 0) return;
+    
+    let csv = 'Name,Family,Color Group,Status\n';
+    allAttendees.forEach(attendee => {
+        const status = attendanceRecords[attendee.id] ? 'Present' : 'Absent';
+        csv += `"${attendee.name}","${attendee.family}","${attendee.colorGroup}","${status}"\n`;
+    });
+    
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `attendance_${new Date().toISOString().split('T')[0]}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+    
+    showNotification('Attendance exported successfully!', 'success');
+}
+
+// Make toggleAttendance globally accessible
+window.toggleAttendance = toggleAttendance;
